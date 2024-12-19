@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менеджер паролей</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Менеджер паролей</h1>
+    </header>
+    <main>
+        <section id="password-list">
+            <h2>Сохраненные пароли</h2>
+            <ul id="passwords"></ul>
+        </section>
+        <section id="add-password">
+            <h2>Добавить новый пароль</h2>
+            <form id="password-form">
+                <input type="text" id="url" placeholder="URL" required>
+                <input type="text" id="login" placeholder="Логин" required>
+                <input type="password" id="password" placeholder="Пароль" required>
+                <button type="button" id="generate-password">Сгенерировать пароль</button>
+                <button type="submit">Сохранить</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
